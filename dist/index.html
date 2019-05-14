@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title></title>
+    <script type="text/javascript" src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+
+<body>
+<!-- 页眉 -->
+<div class="hxw-top-bar-wrap">
+    <div class="hxw-top-bar-inner clearfix">
+        <div class="hxw-nav clearfix">
+            <ul class="hxw-nav-list">
+                <li class="hxw-nav-list-first"><a href="http://www.hxnews.com/">海峡网</a></li>
+                <li><a href="http://www.hxnews.com/news/" target="_blank" title="新闻">新闻</a></li>
+                <li><a href="http://www.hxnews.com/news/fj/" target="_blank" title="福建">福建</a></li>
+                <li><a href="http://www.hxnews.com/news/fj/fz/" target="_blank" title="福州">福州</a></li>
+                <li><a href="http://www.hxnews.com/news/fj/mn/" target="_blank" title="闽南">闽南</a></li>
+                <li><a href="http://www.hxnews.com/news/la/" target="_blank" title="台湾">台湾</a></li>
+                <li><a href="http://www.hxnews.com/news/gn/" target="_blank" title="国内">国内</a></li>
+                <li><a href="http://www.hxnews.com/news/gj/" target="_blank" title="国际">国际</a></li>
+                <li><a href="http://dzb.hxnews.com/news/" target="_blank" title="电子报">电子报</a></li>
+                <li class="hxw-nav-list-last"><a href="#" class="hxw-more">更多<i></i></a>
+                    <ul class="hxw-nav-others">
+                        <li>
+                            <a href="http://www.hxnews.com/edu/jyzx/" title="教育" target="_blank">教育</a>
+                            <a href="http://house.hxnews.com/" title="房产" target="_blank">房产</a>
+                            <a href="http://auto.hxnews.com/" title="汽车" target="_blank">汽车</a>
+                            <a href="http://chuangye.hxnews.com/" title="创业" target="_blank">创业</a>
+                            <a href="http://home.hxnews.com/house/" title="家居" target="_blank">家居</a>
+                            <a href="http://www.hxnews.com/travel/" title="旅游" target="_blank">旅游</a>
+                        </li>
+                        <li>
+                            <a href="" title="出国" target="_blank">出国</a>
+                            <a href="http://love.hxnews.com/" title="婚恋" target="_blank">婚恋</a>
+                            <a title="婚嫁" target="_blank" href="http://www.hxnews.com/marry/">婚嫁</a>
+                            <a href="http://www.hxnews.com/baby/" title="亲子" target="_blank">亲子</a>
+                            <a href="http://www.hxnews.com/news/sp/" title="海峡视频" target="_blank">视频</a>
+                            <a href="http://www.hxnews.com/news/tp/" title="海峡图库" target="_blank">图片</a>
+                        </li>
+                        <li class="hxw-nav-others-last">
+                            <a href="http://www.hxnews.com/news/yl/" title="娱乐新闻" target="_blank">娱乐</a>
+                            <a href="http://www.hxnews.com/news/ty/" title="体育新闻" target="_blank">体育</a>
+                            <a href="http://chuangye.hxnews.com/hxcyhd/" target="_blank" title="IT科技">科技</a>
+                            <a href="http://www.hxnews.com/news/cjpd/" title="财经新闻" target="_blank">财经</a>
+                            <a href="http://www.hxnews.com/news/dmyx/dmzx/" title="动漫" target="_blank">动漫</a>
+                            <a href="http://www.hxnews.com/dz/" target="_blank" title="段子趣图">段子</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--通行证组件start-->
+        <div class="hxw-client">
+            <div class="hxw-client-tl">
+                <a class="hxw-yd">海湃客户端<i class="hxw-icon hxw-icon-arrows-a"></i></a>
+                <div class="hxw-dropdown">
+                    <img src="http://img.hxnews.com/w/templates/nhaidu/skin/images/pages/index_news_20160419/hxw_1.jpg">
+                </div>
+            </div>
+        </div>
+        <div id="SI_User" class="TAP14" style="position: relative;">
+            <div id="logout_status">
+                <div class="ac-rgst"><a
+                        href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=register"
+                        class="head-register msg-link" target="_blank">注册</a></div>
+                <div class="ac-login">
+                    <div class="ac-login-cnt">
+                        <a class="ac-login-cnt head-login"
+                           href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=login">
+                            <span class="log-links">登录</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="yh ac-login " id="login_status" style="display:none;">
+                <div class="head-login log-links"
+                     href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=login">
+                    <span class="yh_wright">您好，<a target="_blank"
+                                                  href="http://apps.hxnews.com/?app=contribution&amp;controller=panel&amp;action=index"
+                                                  class="head-member"><em></em></a></span>&nbsp;|&nbsp;<a
+                        href="http://apps.hxnews.com/?app=member&amp;controller=index&amp;action=logout"
+                        class="head-logout">退出</a>
+                </div>
+            </div>
+        </div>
+        <!--/通行证组件end-->
+    </div>
+</div>
+<!-- 头部 -->
+<div class="hx-head">
+
+</div>
+<div class="hx-nav">
+    <div class="wrap">
+        <ul>
+            <li>
+                <a class="hx-l-1" href="">语言培训</a>
+                <div class="hx-l-2">
+                    <div class="hx-l-con"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 中间内容 -->
+<div class="wrap clearfix">
+    <!-- 左侧内容 -->
+    <div class="hx-l">
+        <!--<ul class="pub-list">
+            <li>
+                <a href="">2018年土建实操班招生信息</a>
+            </li>
+            <li>
+                <a href="">2018年土建实操班招生信息</a>
+            </li>
+            <li>
+                <a href="">2018年土建实操班招生信息</a>
+            </li>
+            <li>
+                <a href="">2018年土建实操班招生信息</a>
+            </li>
+            <li>
+                <a href="">2018年土建实操班招生信息</a>
+            </li>
+            <li>
+                <a href="">2018年土建实操班招生信息</a>
+            </li>
+        </ul>-->
+
+        <!--面授列表-->
+        <div class="tcn-ms">
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_1.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            16h密训点精班，30天冲刺首选
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        一级建造师报考专业划分：建筑工程、公路工程铁路工程、民航机场工程、
+                        港口与航道工程水利水电工程、市政公用工程、通信与广电工程业工程、机电工程。
+                        一级建造师报考条件信与广电工程、矿申请参加一级建造师执业资格考试机电工程... ...
+                    </p>
+                </div>
+
+            </div>
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_1.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            16h密训点精班，30天冲刺首选
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        一级建造师报考专业划分：建筑工程、公路工程铁路工程、民航机场工程、
+                        港口与航道工程水利水电工程、市政公用工程、通信与广电工程业工程、机电工程。
+                        一级建造师报考条件信与广电工程、矿申请参加一级建造师执业资格考试机电工程... ...
+                    </p>
+                </div>
+
+            </div>
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_1.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            16h密训点精班，30天冲刺首选
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        一级建造师报考专业划分：建筑工程、公路工程铁路工程、民航机场工程、
+                        港口与航道工程水利水电工程、市政公用工程、通信与广电工程业工程、机电工程。
+                        一级建造师报考条件信与广电工程、矿申请参加一级建造师执业资格考试机电工程... ...
+                    </p>
+                </div>
+
+            </div>
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_2.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            16h密训点精班，30天冲刺首选
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        公司经历多年的发展总结摸索出一套独具特色的教育模式，成熟的管理机制，稳健的教育规划，科学的体系架构。
+                        以“言传身教、授之以行、感知文明、德育树人”为宗旨，“体验军旅生活、发现真正自我、培养良......
+                    </p>
+                </div>
+
+            </div>
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_3.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            2019一级建造师经典习题班
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        公司经历多年的发展总结摸索出一套独具特色的教育模式，成熟的管理机制，稳健的教育规划，科学的体系架构。
+                        以“言传身教、授之以行、感知文明、德育树人”为宗旨，“体验军旅生活、发现真正自我、培养良......
+                    </p>
+                </div>
+
+            </div>
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_3.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            2019一级建造师精品班
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        一级建造师报考专业划分：建筑工程、公路工程铁路工程、民航机场工程、
+                        港口与航道工程水利水电工程、市政公用工程、通信与广电工程业工程、机电工程。
+                        一级建造师报考条件信与广电工程、矿申请参加一级建造师执业资格考试机电工程... ...
+                    </p>
+                </div>
+
+            </div>
+            <div class="tcn-ms-item clearfix">
+                <img src="images/tcn_ms_3.png" alt="1">
+                <div class="tcn-ms-nr">
+                    <div class="tcn-ms-nr-top clearfix">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            2019一级建造师经典习题班
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                    <p>
+                        一级建造师报考专业划分：建筑工程、公路工程铁路工程、民航机场工程、
+                        港口与航道工程水利水电工程、市政公用工程、通信与广电工程业工程、机电工程。
+                        一级建造师报考条件信与广电工程、矿申请参加一级建造师执业资格考试机电工程... ...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!--资讯列表-->
+        <div class="tcn-zx">
+            <div class="tcn-zx-types">
+                <img src="images/tcn_zx_1.png" alt="类别">
+                <ul class="tcn-zx-types-xq">
+                    <a href="javascript:void (0)">考试报名</a>
+                    <a href="javascript:void (0)">领准考证</a>
+                    <a href="javascript:void (0)">成绩查询</a>
+                    <a href="javascript:void (0)">考试大纲</a>
+                    <a href="javascript:void (0)">报考指南</a>
+                    <a href="javascript:void (0)">合格证书</a>
+                    <a href="javascript:void (0)">行业资讯</a>
+                    <a href="javascript:void (0)">合格证书</a>
+                    <a href="javascript:void (0)">行业资讯</a>
+                    <a href="javascript:void (0)">领准考证</a>
+                    <a href="javascript:void (0)">成绩查询</a>
+                    <a href="javascript:void (0)">考试大纲</a>
+                </ul>
+
+                <ul class="tcn-new-list">
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[建设工程教育网]</span>  二建水利水电考点辅导：设计水位的近似计算方法
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[会计职称]</span>  2019四川中级会计职称报名入口已开通
+
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                    <li>
+                        ▪  <span>[环球网校]</span>  二建水利水电考点辅导：河道整治规划弯曲型河段整治基本要求
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--问答列表-->
+        <div class="tcn-wd">
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                    <div class="tcn-wk-xq-nr">
+                        <i></i>
+                        <a href="javascript:void (0)">2019一级建造师课程推荐</a>
+                    </div>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        各省市、地区2019年一级建造师考试报名工作于2019年7月份陆续进行。
+                        2019年报名时间预计6-7月，可参考2018年一建考试报名时间
+                        2019年一级建造师考试时间于2019年9月21、22日。各省市、地区2019年一级建造师......
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧内容 -->
+    <div class="hx-r">
+        <form class="tcn-form">
+            <input type="text" class="tcn-user-name"
+                   placeholder="请输入您的姓名">
+            <input type="text" class="tcn-user-tel" maxlength="11"
+                   placeholder="请输入您的联系方式 ">
+            <input type="submit" class="tcn-submit"
+                   value="立即领取">
+            <div class="tcn-consult">
+                <div class="tcn-tel">
+                    <span>报考咨询</span><br/>
+                    <strong>17722510186</strong>
+                </div>
+                <a href="javascript:void (0)" class="tcn-online" target="_blank">
+                    <img src="images/tcn_online1.png" alt=""><br/>
+                    <span>在线咨询</span>
+                </a>
+            </div>
+        </form>
+        <!--热门机构-->
+        <div class="tcn-jg">
+            <div class="tcn-r-title">
+                <i></i>
+                <span>热门机构</span>
+            </div>
+            <div class="tcn-jg-item">
+                <div class="mask"></div>
+                <img src="images/chinaacc_logo.png" alt="中华会计网校">
+                <div class="tcn-jg-xq">
+                    <p>
+                        初级会计职称｜中级会计职称｜中级会计
+                        职称｜中级会计职称｜初级会计职...
+                    </p>
+                    <span>机构主页</span>
+                </div>
+                <a href="javascript:void (0)" target="_blank">机构主页 > </a>
+            </div>
+            <div class="tcn-jg-item">
+                <div class="mask"></div>
+                <img src="images/chinaacc_logo.png" alt="中华会计网校">
+                <div class="tcn-jg-xq">
+                    <p>
+                        初级会计职称｜中级会计职称｜中级会计
+                        职称｜中级会计职称｜初级会计职...
+                    </p>
+                    <span>机构主页</span>
+                </div>
+                <a href="javascript:void (0)" target="_blank">机构主页 > </a>
+            </div>
+            <div class="tcn-jg-item">
+                <div class="mask"></div>
+                <img src="images/chinaacc_logo.png" alt="中华会计网校">
+                <div class="tcn-jg-xq">
+                    <p>
+                        初级会计职称｜中级会计职称｜中级会计
+                        职称｜中级会计职称｜初级会计职...
+                    </p>
+                    <span>机构主页</span>
+                </div>
+                <a href="javascript:void (0)" target="_blank">机构主页 > </a>
+            </div>
+            <div class="tcn-jg-item">
+                <div class="mask"></div>
+                <img src="images/chinaacc_logo.png" alt="中华会计网校">
+                <div class="tcn-jg-xq">
+                    <p>
+                        初级会计职称｜中级会计职称｜中级会计
+                        职称｜中级会计职称｜初级会计职...
+                    </p>
+                    <span>机构主页</span>
+                </div>
+                <a href="javascript:void (0)" target="_blank">机构主页 > </a>
+            </div>
+        </div>
+        <!--热门网课-->
+        <div class="tcn-wk">
+            <div class="tcn-r-title">
+                <i></i>
+                <span>热门网课</span>
+                <a href="javascript:void (0)">更多 ></a>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="mask"></div>
+                <img src="images/tcn_avatar1.png" alt="头像">
+                <div class="tcn-wk-xq">
+                    <div class="tcn-wk-xq-headline">建设工程项目管理</div>
+                    <div class="tcn-wk-xq-nr">
+                        直播时间 : <span>今日</span>
+                        时长 : <span>60分钟</span>
+                    </div>
+                </div>
+                <a href="javascript:void (0)" target="_blank">立即试听 > </a>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="mask"></div>
+                <img src="images/tcn_avatar2.png" alt="头像">
+                <div class="tcn-wk-xq">
+                    <div class="tcn-wk-xq-headline">建设工程项目管理</div>
+                    <div class="tcn-wk-xq-nr">
+                        直播时间 : <span>今日</span>
+                        时长 : <span>60分钟</span>
+                    </div>
+                </div>
+                <a href="javascript:void (0)" target="_blank">立即试听 > </a>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="mask"></div>
+                <img src="images/tcn_avatar3.png" alt="头像">
+                <div class="tcn-wk-xq">
+                    <div class="tcn-wk-xq-headline">建设工程项目管理</div>
+                    <div class="tcn-wk-xq-nr">
+                        直播时间 : <span>今日</span>
+                        时长 : <span>60分钟</span>
+                    </div>
+                </div>
+                <a href="javascript:void (0)" target="_blank">立即试听 > </a>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="mask"></div>
+                <img src="images/tcn_avatar3.png" alt="头像">
+                <div class="tcn-wk-xq">
+                    <div class="tcn-wk-xq-headline">建设工程项目管理</div>
+                    <div class="tcn-wk-xq-nr">
+                        直播时间 : <span>今日</span>
+                        时长 : <span>60分钟</span>
+                    </div>
+                </div>
+                <a href="javascript:void (0)" target="_blank">立即试听 > </a>
+            </div>
+        </div>
+        <!--热门新闻-->
+        <div class="tcn-news">
+            <div class="tcn-r-title">
+                <i></i>
+                <span>热门新闻</span>
+            </div>
+            <div class="tcn-new-vessel">
+                <div class="tcn-new-item clearfix">
+                    <img src="images/tcn_new1.png" alt="新闻">
+                    <div class="tcn-wk-xq">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            · 2018年一级消防工<br/>
+                            程师可以报名了吗？
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tcn-new-item clearfix">
+                    <img src="images/tcn_new1.png" alt="新闻">
+                    <div class="tcn-wk-xq">
+                        <a class="tcn-wk-xq-headline" href="javascript:void (0)" target="_blank">
+                            · 2018年一级消防工<br/>
+                            程师可以报名了吗？
+                        </a>
+                        <div class="tcn-wk-xq-nr">
+                            <i></i>
+                            <span>2019-04-19</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="tcn-new-list">
+                    <li>▪ 2018年一级消防工程师可以报名了吗？</li>
+                    <li>▪ 北京Linux运维培训机构费用多少</li>
+                    <li>▪ 2018年一级消防工程师可以报名了吗？</li>
+                    <li>▪ 北京OCM培训价格多少</li>
+                    <li>▪ 精装修造价实操班课程设置...</li>
+                    <li>▪ 2018年土建实操班招生信息</li>
+                    <li>▪ 2018年一级消防工程师可以报名了吗？</li>
+                </ul>
+            </div>
+        </div>
+        <!--相关问答-->
+        <div class="tcn-wd">
+            <div class="tcn-r-title">
+                <i></i>
+                <span>相关问答</span>
+                <a href="javascript:void (0)">更多 ></a>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        一级建造师哪里好，收费怎么样，找不
+                        到好机构，郁闷。推荐一个学校...
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        一级建造师哪里好，收费怎么样，找不
+                        到好机构，郁闷。推荐一个学校...
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        一级建造师哪里好，收费怎么样，找不
+                        到好机构，郁闷。推荐一个学校...
+                    </p>
+                </div>
+            </div>
+            <div class="tcn-wk-item">
+                <div class="tcn-wd-w clearfix">
+                    <strong>问</strong>
+                    <a href="javascript:void (0)">
+                        一级建造师培训班收费
+                    </a>
+                </div>
+                <div class="tcn-wd-d clearfix">
+                    <strong>答</strong>
+                    <p>
+                        一级建造师哪里好，收费怎么样，找不
+                        到好机构，郁闷。推荐一个学校...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--热门标签-->
+        <div class="tcn-tag">
+            <div class="tcn-r-title">
+                <i></i>
+                <span>热门标签</span>
+            </div>
+            <div class="tcn-tag-vessel">
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+                <a href="javascript:void (0)"
+                   class="tcn-tag-item" target="_blank">
+                    一级建造师
+                </a>
+            </div>
+        </div>
+        <!--相关课程-->
+        <div class="tcn-kc">
+            <div class="tcn-r-title">
+                <i></i>
+                <span>相关课程</span>
+            </div>
+            <div class="tcn-tag-vessel">
+                <div id="lbt">
+                    <div id="imgs">
+                        <img src="images/tcn_kc1.png" alt="1" class="sel">
+                        <img src="images/tcn_new1.png" alt="2">
+                        <img src="images/tcn_kc1.png" alt="3">
+                    </div>
+                    <div id="indicator">
+                        <span class="sel">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                </div>
+
+                <ul class="tcn-new-list">
+                    <li>▪ 2018年一级消防工程师可以报名了吗？</li>
+                    <li>▪ 北京Linux运维培训机构费用多少</li>
+                    <li>▪ 2018年一级消防工程师可以报名了吗？</li>
+                    <li>▪ 北京OCM培训价格多少</li>
+                    <li>▪ 精装修造价实操班课程设置...</li>
+                    <li>▪ 2018年土建实操班招生信息</li>
+                    <li>▪ 2018年一级消防工程师可以报名了吗？</li>
+                </ul>
+            </div>
+        </div>
+        <!--在线咨询-->
+        <div class="tcn-zx">
+            <div class="tcn-zx-title">
+                环球网校
+                <span class="after"></span>
+            </div>
+            <div class="tcn-zx-zs clearfix">
+                <span>推荐指数 : </span>
+                <!--满心-->
+                <i class="full"></i>
+                <i class="full"></i>
+                <i class="full"></i>
+                <!--3分之一-->
+                <i class="little"></i>
+                <!--灰-->
+                <i class="without"></i>
+            </div>
+            <div class="tcn-zx-ly">
+                <span>推荐理由 : </span>
+                环球网校目前是国内顶尖的一级建造师培训网校，
+                站在金字塔顶端，市面上的名师都被挖到环球讲课，王树京，陈明。
+            </div>
+            <a href="javascript:void (0)" class="tcn-zx-btn" target="_blank">
+                <i></i>
+                在线咨询
+            </a>
+        </div>
+        <!--机构展示-->
+        <div class="tcn-jy">
+            <div class="tcn-jy-btn">
+                <a href="javascript:void (0)" class="btn zl" target="_blank">免费资料</a>
+                <a href="javascript:void (0)" class="btn sp" target="_blank">免费视频</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<script src="https://img.thea.cn/public/js/thea.ms.form.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(".hxw-nav-list-last").hover(function () {
+    $('.hxw-more').addClass("cur");
+    $('.hxw-nav-others').css("display", "block");
+    $('.hxw-nav-others').css("margin-left", '79px');
+  }, function () {
+    $('.hxw-nav-others').css("display", "none");
+    $('.hxw-more').removeClass("cur");
+  })
+  $(".hxw-client-tl").hover(function () {
+    $(".hxw-yd").addClass("cur");
+    $('.hxw-dropdown').css("display", "block");
+  }, function () {
+    $('.hxw-dropdown').css("display", "none");
+    $(".hxw-yd").removeClass("cur");
+  })
+</script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+
+</html>
